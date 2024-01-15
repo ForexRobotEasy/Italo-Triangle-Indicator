@@ -1,0 +1,54 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                              Italo Triangle Indicator |
+//|                                      Copyright © 2022, Forex Robot Easy Team |
+//|                                               http://www.forexroboteasy.com |
+//+------------------------------------------------------------------+
+
+#property strict
+
+//+------------------------------------------------------------------+
+//| Custom Indicator initialization function                         |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+    // Add indicator initialization logic here
+    return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//| Custom Indicator deinitialization function                       |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+{
+    // Add indicator deinitialization logic here
+}
+
+//+------------------------------------------------------------------+
+//| Custom Indicator iteration function                              |
+//+------------------------------------------------------------------+
+int OnCalculate(const int rates_total,
+                const int prev_calculated,
+                const datetime &time[],
+                const double &open[],
+                const double &high[],
+                const double &low[],
+                const double &close[],
+                const long &tick_volume[],
+                const long &volume[],
+                const int &spread[])
+{
+    // Add indicator calculation logic here
+    return(rates_total);
+}
+
+//+------------------------------------------------------------------+
+//| Custom Indicator drawing function                                |
+//+------------------------------------------------------------------+
+void OnChartEvent(const int id,
+                  const long &lparam,
+                  const double &dparam,
+                  const string &sparam)
+{
+    // Add chart event handling logic here
+}
